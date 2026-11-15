@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "ToledoGo",
+    "slug": "ToledoGo",
+    "scheme": "toledogo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#FFF9F2"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.anonymous.ToledoGo"
+    },
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/images/splash-logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#451A03"
+    },
+    "plugins": [
+      "expo-camera",
+      "expo-notifications",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#451A03",
+          "image": "./assets/images/splash-logo.png",
+          "imageWidth": 220,
+          "resizeMode": "contain",
+          "dark": {
+            "backgroundColor": "#451A03",
+            "image": "./assets/images/splash-logo.png"
+          }
+        }
+      ],
+      "@react-native-community/datetimepicker",
+      "expo-router"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "8c37d1c0-6b46-4f35-b613-6273a801e4d6"
+      }
+    }
+  }
+}
